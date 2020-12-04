@@ -16,7 +16,6 @@ class ToggleAnySettingCommand(sublime_plugin.ApplicationCommand):
 			print("setting not present")
 
 		sublime.save_settings(settings_base_name)
-		settings_list = [self.settings]
 
 		#print("currently:", self.settings.get(setting))
 
