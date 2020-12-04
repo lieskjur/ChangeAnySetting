@@ -1,7 +1,7 @@
 import sublime
 import sublime_plugin
 
-class ToggleAnySettingCommand(sublime_plugin.WindowCommand):
+class ToggleAnySettingCommand(sublime_plugin.ApplicationCommand):
 	def run(self, settings_base_name="Preferences.sublime-settings" , setting="dummy_setting"):
 		self.settings = sublime.load_settings(settings_base_name)
 		state = self.settings.get(setting)
